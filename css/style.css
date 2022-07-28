@@ -1,0 +1,21 @@
+/*#region Imported Settings  */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* a-Link reset */
+a {
+    color: inherit;
+    cursor: default;
+    text-decoration: none;
+}
+
+/*#endregion Imported Settings  */
