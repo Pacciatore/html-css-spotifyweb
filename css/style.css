@@ -29,6 +29,8 @@ a {
     --bg-header: #080b12;
     --bg-main: #141922;
 
+    --footer-height: 100px;
+
     --padding: 10px;
 }
 
@@ -36,6 +38,10 @@ a {
 /** Generics **/
 img {
     width: 100%;
+}
+
+.xs-hidden {
+    display: none;
 }
 
 /*#region Utilities  */
@@ -58,20 +64,20 @@ img {
 aside {
     background-color: black;
 
-    width: 75px;
     padding: var(--padding);
 }
 
-aside .logo-container {
-    display: none;
+aside img {
+    width: 75px;
 }
 
 /*#endregion Aside  */
 
 main {
     background-color: var(--bg-main);
-    flex-grow: 1;
     position: relative;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 /*#region Header  */
@@ -102,12 +108,47 @@ header a {
 
 /*#endregion Header  */
 
+/*#region Album Container  */
+
+#album-container {
+    height: calc(100vh - var(--footer-height));
+    padding-top: var(--footer-height);
+}
+
+/*#endregion Album Container  */
+
 footer {
     background-color: var(--bg-footer);
+    height: var(--footer-height);
 }
 
 /*#endregion Content  */
 
+/*#region Media Query  */
+
+@media screen and (min-width: 550px) {
+
+    /*#region Utilities  */
+    .xs-show {
+        display: none;
+    }
+
+    .xs-hidden {
+        display: initial;
+    }
+
+    /*#endregion Utilities  */
+
+    /*#region Aside  */
+    aside img {
+        width: 150px;
+    }
+
+    /*#endregion Aside  */
+
+}
+
+/*#endregion Media Query  */
 
 /*#region Debug  */
 
@@ -116,11 +157,17 @@ footer {
 }
 
 .debug footer {
-    min-height: 180px;
+    /* min-height: 100px; */
 }
+
 
 .debug aside {
     /* width: 75px; */
+}
+
+.square {
+    height: 600px;
+    width: 600px;
 }
 
 /*#endregion Debug  */
