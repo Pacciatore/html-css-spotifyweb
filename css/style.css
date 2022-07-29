@@ -68,7 +68,7 @@ aside {
 }
 
 aside img {
-    width: 75px;
+    width: 50px;
 }
 
 /*#endregion Aside  */
@@ -86,23 +86,18 @@ header {
     background-color: var(--bg-header);
     position: absolute;
     width: 100%;
-    padding: var(--padding);
+    padding: 25px var(--padding);
 
     text-align: right;
     opacity: 80%;
 }
 
-header .a-container {
-    padding: 30px 10px;
-}
-
 header a {
-    margin: 50px 0;
-    padding: 10px 40px;
+    padding: 5px 20px;
 
     text-transform: uppercase;
 
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 20px;
 }
 
@@ -126,7 +121,7 @@ footer {
 
 /*#region Media Query  */
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 553px) {
 
     /*#region Utilities  */
     .xs-show {
@@ -147,6 +142,12 @@ footer {
     /*#endregion Aside  */
 
 }
+
+@media screen and (min-width: 640px) {}
+
+@media screen and (min-width: 879px) {}
+
+@media screen and (min-width: 1441px) {}
 
 /*#endregion Media Query  */
 
