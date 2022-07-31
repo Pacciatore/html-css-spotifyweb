@@ -416,6 +416,27 @@ footer {
 
     /*#endregion Aside  */
 
+    /*#region Footer  */
+    .song-actions {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    .song-info .img-container {
+        width: 25%;
+    }
+
+    .media-toolbar {
+        column-gap: 5px;
+    }
+
+    .max-audio {
+        margin: 0 var(--padding);
+    }
+
+    /*#endregion Footer  */
+
 }
 
 @media screen and (min-width: 639px) {
