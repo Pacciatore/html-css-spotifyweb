@@ -74,6 +74,9 @@ aside {
 
 aside img {
     width: 30px;
+}
+
+.menu-item {
     margin: var(--padding) 0;
 }
 
@@ -185,7 +188,7 @@ footer {
     }
 
     aside {
-        padding-right: 50px;
+        width: 220px;
         font-size: 0.75rem;
     }
 
@@ -193,6 +196,15 @@ footer {
     .playlist>*:not(h3),
     .download-app {
         opacity: 0.7;
+    }
+
+    /* Barra verde a sx dell'home, aggiungo del padding equivalente
+    alla differenza assoluta fra il left e lo spessore del border  */
+    .menu-item:first-of-type {
+        position: relative;
+        left: calc(var(--padding) * -1);
+        padding-left: 7px;
+        border-left: 3px solid #a7f62d;
     }
 
     .playlist>*:not(h3) {
@@ -208,8 +220,23 @@ footer {
         padding-right: var(--padding);
     }
 
+
     .low-aside {
         align-items: flex-start;
+    }
+
+    .low-aside .download-app {
+        width: 100%;
+        padding-bottom: var(--padding);
+        border-bottom: 1px solid white;
+    }
+
+    .download-app i {
+        margin-right: var(--padding);
+    }
+
+    .profile-container span {
+        font-weight: bold;
     }
 
     /*#endregion Aside  */
