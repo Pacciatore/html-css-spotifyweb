@@ -285,7 +285,7 @@ footer {
 
 .song-toolbar {
     flex-grow: 1;
-    padding: var(--padding);
+    justify-content: center;
 }
 
 .toolbar-buttons,
@@ -296,6 +296,7 @@ footer {
 }
 
 .toolbar-buttons {
+    align-self: center;
     width: 200px;
     font-size: 1.2rem;
     padding-bottom: var(--padding);
@@ -321,6 +322,11 @@ footer {
     border-radius: 10px;
     height: 5px;
     flex-grow: 1;
+}
+
+.max-audio {
+    flex-grow: 0;
+    width: 40%;
 }
 
 .song-playing,
@@ -431,10 +437,6 @@ footer {
         column-gap: 5px;
     }
 
-    .max-audio {
-        margin: 0 var(--padding);
-    }
-
     /*#endregion Footer  */
 
 }
@@ -471,6 +473,14 @@ footer {
     }
 
     /*#endregion Album-container  */
+
+    /*#region Footer  */
+    .media-toolbar {
+        justify-content: space-evenly;
+        padding-left: 5%;
+    }
+
+    /*#endregion Footer  */
 
 }
 
