@@ -53,6 +53,45 @@ a {
     opacity: 0.7;
 }
 
+/** Graphic effects **/
+
+.menu-item a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+#album-container .img-container {
+    position: relative;
+}
+
+.play-hover {
+    position: absolute;
+    top: 0;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.play-hover i {
+    position: absolute;
+    opacity: 1;
+    top: calc(50% - 1rem);
+    left: calc(50% - 1rem);
+
+    font-size: 2rem;
+}
+
+#album-container .img-container:hover>.play-hover {
+    display: block;
+}
+
+#album-container .artist>.img-container:hover>.play-hover {
+    display: block;
+    border-radius: 50%;
+}
+
 /** Generics **/
 img {
     width: 100%;
@@ -231,7 +270,7 @@ header a {
     padding-bottom: var(--padding);
 }
 
-#album-container .column>*:not(img) {
+#album-container .column>*:not(.img-container) {
     text-align: center;
     padding-top: var(--padding);
 }
