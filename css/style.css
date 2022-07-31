@@ -39,6 +39,13 @@ a {
     --padding: 10px;
 }
 
+/** Shared  **/
+
+.menu-item:not(.menu-item:first-of-type),
+.playlist>*:not(h3),
+.download-app {
+    opacity: 0.7;
+}
 
 /** Generics **/
 img {
@@ -192,11 +199,6 @@ footer {
         font-size: 0.75rem;
     }
 
-    .menu-item:not(.menu-item:first-of-type),
-    .playlist>*:not(h3),
-    .download-app {
-        opacity: 0.7;
-    }
 
     /* Barra verde a sx dell'home, aggiungo del padding equivalente
     alla differenza assoluta fra il left e lo spessore del border  */
