@@ -18,6 +18,11 @@ a {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
 /*#endregion Imported Settings  */
 
 /*#region Content  */
@@ -48,8 +53,6 @@ img {
 
 .web-app {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     color: white;
 }
 
@@ -65,10 +68,51 @@ aside {
     background-color: black;
 
     padding: var(--padding);
+
+    justify-content: space-between;
 }
 
 aside img {
-    width: 50px;
+    width: 30px;
+    margin: var(--padding) 0;
+}
+
+.menu-item,
+.low-aside,
+.low-aside>* {
+    display: flex;
+    align-items: center;
+}
+
+.low-aside {
+    justify-content: space-between;
+    height: 70px;
+}
+
+aside .download-app i {
+    font-size: 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.profile-container .img-container {
+    background-color: #666;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.profile-container img {
+    border-radius: 50%;
+    width: 25px;
+    margin-top: 2px;
+}
+
+
+aside span {
+    padding: 0 var(--padding) 0;
 }
 
 /*#endregion Aside  */
@@ -135,7 +179,7 @@ footer {
     /*#endregion Utilities  */
 
     /*#region Aside  */
-    aside img {
+    #logo {
         width: 150px;
     }
 

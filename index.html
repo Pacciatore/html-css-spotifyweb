@@ -27,18 +27,65 @@
 
 <body class="debug">
 
-    <div class="web-app">
+    <div class="web-app flex">
 
         <div id="app-container">
 
-            <aside>
+            <aside class="flex">
 
-                <div class="logo-container xs-show">
-                    <img src="img/logo-small.svg" alt="logo-small">
+                <div class="menu">
+
+                    <img class="xs-show" src="img/logo-small.svg" alt="logo-small">
+
+                    <img id="logo" class="xs-hidden" src="img/logo.svg" alt="logo">
+
+
+                    <div class="menu-item">
+                        <img src="img/home.svg" alt="home">
+                        <span class="xs-hidden">Home</span>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <img src="img/search.svg" alt="search">
+                        <span class="xs-hidden">Cerca</span>
+                    </div>
+
+
+                    <div class="menu-item">
+                        <img src="img/libreria.svg" alt="libreria">
+                        <span class="xs-hidden">La tua libreria</span>
+                    </div>
+
+                    <div class="playlist xs-hidden">
+                        <h3>Playlist</h3>
+
+                        <div class="create-playlist">
+                            <i class="fa-solid fa-square-plus"></i> Crea Playlist
+                        </div>
+                        <div class="playlist-element">Nome Playlist</div>
+                        <div class="playlist-element">Nome Playlist</div>
+                        <div class="playlist-element">Nome Playlist</div>
+                        <div class="playlist-element">Nome Playlist</div>
+                        <div class="playlist-element">Nome Playlist</div>
+                        <div class="playlist-element">Nome Playlist</div>
+                        <div class="playlist-element">Nome Playlist</div>
+                    </div>
+
                 </div>
 
-                <div class="logo-container xs-hidden">
-                    <img src="img/logo.svg" alt="logo">
+                <div class="low-aside flex">
+                    <div class="download-app">
+                        <i class="fa-solid fa-arrow-down"></i>
+                        <p class="xs-hidden">Installa app</p>
+                    </div>
+
+                    <div class="profile-container">
+                        <div class="img-container">
+                            <img src="img/profile.svg" alt="profile">
+                        </div>
+                        <span class="xs-hidden">John Doe</span>
+                    </div>
                 </div>
 
             </aside>
