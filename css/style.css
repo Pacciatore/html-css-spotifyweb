@@ -267,6 +267,7 @@ footer {
 
 .song-info .img-container {
     width: 20%;
+    max-width: 50px;
 }
 
 .song-info .song-details,
@@ -504,6 +505,19 @@ footer {
     }
 
     /*#endregion Album-container  */
+
+    /*#region Footer  */
+    .song-actions {
+        flex-direction: row;
+        column-gap: var(--padding);
+        padding-left: 10%;
+    }
+
+    .media-toolbar {
+        padding-left: 15%;
+    }
+
+    /*#endregion Footer  */
 
 }
 
