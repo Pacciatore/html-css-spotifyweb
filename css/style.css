@@ -53,7 +53,7 @@ a {
     color: #ffffffab;
 }
 
-/** Graphic effects **/
+/*#region Graphic effects **/
 
 .a-container {
     pointer-events: none;
@@ -127,6 +127,8 @@ nav a:hover {
     bottom: -5px;
     left: calc(100% - 8px);
 }
+
+/*#endregion Graphic effects  */
 
 /** Generics **/
 img {
@@ -485,7 +487,7 @@ footer {
     .low-aside .download-app {
         width: 100%;
         padding-bottom: var(--padding);
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid #ffffffab;
     }
 
     .download-app i {
