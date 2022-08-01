@@ -50,13 +50,28 @@ a {
 .listen-more,
 .song-artist,
 .song-actions {
-    opacity: 0.7;
+    color: #ffffffab;
 }
 
 /** Graphic effects **/
 
-.menu-item a:hover {
-    opacity: 1;
+.a-container {
+    pointer-events: none;
+}
+
+.a-container>a {
+    pointer-events: auto;
+}
+
+.a-container:hover {
+    transform: scale(1.2);
+    margin-right: 10%;
+}
+
+.menu a:hover,
+.low-aside a:hover,
+nav a:hover {
+    color: white;
     cursor: pointer;
 }
 
@@ -70,13 +85,12 @@ a {
     display: none;
     height: 100%;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
+    background-color: #0000007a;
 }
 
 .play-hover i {
     position: absolute;
-    opacity: 1;
+    background-color: black;
     top: calc(50% - 1rem);
     left: calc(50% - 1rem);
 
@@ -90,6 +104,28 @@ a {
 #album-container .artist>.img-container:hover>.play-hover {
     display: block;
     border-radius: 50%;
+}
+
+.song-length:hover,
+.max-audio:hover {
+    cursor: pointer;
+}
+
+.song-length:hover .song-playing,
+.max-audio:hover .current-audio {
+    background-color: var(--app-theme-color);
+    position: relative;
+}
+
+.song-length:hover .song-playing::after,
+.max-audio:hover .current-audio::after {
+    content: '\f111';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+
+    position: absolute;
+    bottom: -5px;
+    left: calc(100% - 8px);
 }
 
 /** Generics **/
